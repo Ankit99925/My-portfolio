@@ -1,0 +1,110 @@
+@media (max-width:600px) {
+
+    /* index */
+    nav ul li {
+        font-size: 2vw;
+        display: none;
+    }
+
+    nav i {
+        display: block;
+        font-size: 8vw;
+        margin-right: 20px;
+    }
+
+    header h1 {
+        margin-left: 0px;
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_img {
+        display: none;
+    }
+
+    /* aboutme */
+    .page_style {
+        width: 100%;
+    }
+
+    .page_title {
+        margin: 50px auto;
+    }
+
+    .can_do {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 20vw;
+    }
+
+    .design {
+        margin: 0px auto;
+    }
+
+    .development {
+        margin: auto
+    }
+
+    .maintain {
+        margin: auto
+    }
+
+    .m_up {
+        margin: -10vw auto -2vh;
+        width: 70vw;
+    }
+
+    .aboutme_desc {
+        font-size: 0.85rem;
+        width: 80vw;
+        margin: 0 auto;
+
+    }
+
+    .aboutme_img {
+        margin: 50px auto -20px;
+    }
+
+    /* skills */
+
+    .grid-sons {
+        margin: 40px auto;
+    }
+
+    .grid-skills h2 {
+        margin: 0px 40px;
+    }
+
+    /* Portfolio */
+    .portfolio .list .item .content .title {
+        font-size: 3em;
+    }
+
+    .portfolio .list .item .topic {
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+
+    .portfolio .list .item:nth-child(1) .content .description {
+        background: rgba(60, 0, 255, 0.699);
+    }
+
+    .portfolio .list .item .content {
+        top: 0%;
+    }
+
+    /* COntact */
+    form .inp {
+        padding: .5rem;
+        width: 80vw;
+    }
+
+    .contact p {
+        width: 80vw;
+        text-align: center;
+    }
+}
