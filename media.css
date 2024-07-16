@@ -6,7 +6,7 @@
     }
     nav ul li {
         margin-top: 5vw;
-        font-size: 5vw;
+        font-size: 4vw;
         padding: 1rem;
         /* display: none; */
     }
@@ -137,5 +137,125 @@
     .sidebar-btn{
         display: flex;
         z-index: 9999;
+    }
+}
+
+@media (max-width:1075px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    header h1{
+        margin-left: 8vw;
+    }
+
+    nav ul{
+        display: none;
+    }
+    nav ul li {
+        margin-top: 5vw;
+        font-size: 20px;
+        padding: 1rem;
+    }
+    .sidebar-active{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        z-index: 999;
+        /* background-color: rgb(255, 0, 0); */
+        background: hsl(0 0% 100%, 0.1);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(10px);
+        
+    }
+    .sidebar-btn{
+        display: flex;
+        z-index: 9999;
+        width: 10vw;
+        font-size: 50px;
+    }
+    nav li+li::before { display: none;
+        content: "|";
+        padding: 1rem;
+        color: #dfdfdf;
+      }
+    nav i {
+        display: block;
+        font-size: 8vw;
+        margin-right: 20px;
+        
+    }
+    nav ul li{
+        display: flex;
+        justify-content: center;
+
+    }
+    nav ul li:hover{
+        width: 100%;
+        color: blue;
+        transition: 2ms;
+        background-color: rgba(165, 235, 3, 0.1);
+        cursor: pointer ;
+        font-size: 1.55rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    /* aboutme */
+    .page_style {
+        width: 100%;
+    }
+    .page_title {
+        margin: 50px auto;
+    }
+    .can_do {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 10vw;
+    }
+
+    .design {
+        margin: auto;
+    }
+
+    .development {
+        margin: auto
+    }
+
+    .maintain {
+        margin: auto
+    }
+
+    .m_up {
+        margin: auto;
+        width: 70vw;
+    }
+
+    .aboutme_desc {
+        font-size: 0.85rem;
+        width: 80vw;
+        margin: auto;
+
+    }
+
+    .aboutme_img {
+        margin: 25px auto;
+    }
+
+    /* contactme */
+
+    .contact{
+        gap: 6vw;
+    }
+    form{
+        row-gap: 10vw;
     }
 }
